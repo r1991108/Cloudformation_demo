@@ -2,23 +2,6 @@ AWSTemplateFormatVersion: "2010-09-09"
 Resources: 
   S3Bucket: 
     Type: "AWS::S3::Bucket"
-  # MyEC2Instance:
-  #   Type: "AWS::EC2::Instance"
-  #   Properties: 
-  #     ImageId: "ami-032d6db78f84e8bf5"
-  #     InstanceType: "t2.micro"
-  #     SubnetId: "subnet-0b12f3b92cd501025"
-  #     BlockDeviceMappings:
-  #       -
-  #         DeviceName: "/dev/xvda"
-  #         Ebs:
-  #           VolumeType: "gp2"
-  #           VolumeSize: "8"
-  #     Tags:
-  #     - Key: "Name"
-  #       Value: "Ec2_madeFrom_codepipeline"
-      # SecurityGroupIds:
-      #    - !GetAtt "InstanceSecurityGroup.GroupId"
 Outputs: 
   BucketName: 
     Value: 

@@ -27,4 +27,4 @@ Outputs:
   EC2InstanceID: 
     Value: 
       Ref: "EC2"
-    Description: "Id of Amazon EC2."  
+    Description: "Id of the Amazon EC2."  

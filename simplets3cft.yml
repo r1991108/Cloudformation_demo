@@ -23,8 +23,8 @@ Outputs:
   BucketName: 
     Value: 
       Ref: "S3Bucket"
-    Description: "Name of the sample Amazon S3 bucket."
+    Description: "Name of Amazon S3 bucket."
   EC2InstanceID: 
     Value: 
       Ref: "EC2"
-    Description: "Id of the sample Amazon EC2."  
+    Description: "Id of Amazon EC2."  

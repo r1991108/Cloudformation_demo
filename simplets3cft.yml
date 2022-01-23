@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: "2010-09-09"
 Resources: 
   S3Bucket: 
     Type: "AWS::S3::Bucket"
-  MyEC2Instance:
+  EC2:
     Type: "AWS::EC2::Instance"
     Properties: 
       ImageId: "ami-032d6db78f84e8bf5"
@@ -17,10 +17,14 @@ Resources:
       Tags:
       - Key: "Name"
         Value: "Ec2_madeFrom_codepipeline"
-      # SecurityGroupIds:
-      #    - !GetAtt "InstanceSecurityGroup.GroupId"
+      SecurityGroupIds:
+         - !GetAtt "InstanceSecurityGroup.GroupId"
 Outputs: 
   BucketName: 
     Value: 
       Ref: "S3Bucket"
-    Description: "Name of the sample Amazon S3 bucket. test2021"
+    Description: "Name of the sample Amazon S3 bucket."
+  EC2InstanceName: 
+    Value: 
+      Ref: "EC2"
+    Description: "Name of the sample Amazon EC2."  

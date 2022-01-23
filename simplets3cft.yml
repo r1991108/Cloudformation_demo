@@ -17,7 +17,8 @@ Resources:
       Tags:
       - Key: "Name"
         Value: "Ec2_madeFrom_codepipeline"
-      SecurityGroupIds: "sg-0bece73851aac2346"
+      SecurityGroupIds: 
+      - "sg-0bece73851aac2346"
 Outputs: 
   BucketName: 
     Value: 
